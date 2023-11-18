@@ -83,7 +83,6 @@ nav ul li a:hover::after{
 .hand-icon {
     font-size: 1em;
     color: yellow;
-    animation: wave 1s 4; /* Wave for 4 seconds, play once */
 }
 
 /* about */

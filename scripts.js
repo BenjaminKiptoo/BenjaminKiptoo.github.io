@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var wavingIcon = document.getElementById('wavingIcon');
+
+    function startAnimation() {
+        if (wavingIcon) {
+            wavingIcon.style.animation = 'wave 1s 4'; // Start the animation
+            setTimeout(function () {
+                wavingIcon.style.animation = 'none'; // Remove the animation after 4 seconds
+            }, 4000);
+        }
+    }
+
+    // Start animation, then repeat every 7 seconds (4 seconds waving + 3 seconds pause)
+    startAnimation();
+    setInterval(startAnimation, 7000);
+});
+document.addEventListener('DOMContentLoaded', function () {
     let tabTitles = document.querySelectorAll('.tab-links');
     let tabContents = document.querySelectorAll('.tab-contents');
 

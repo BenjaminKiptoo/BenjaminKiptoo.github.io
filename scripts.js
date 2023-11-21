@@ -35,3 +35,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+let sidemenu = document.querySelector("#sidemenu");
+let removeMenu = document.querySelector(".fa-times");
+let addMenu = document.querySelector(".fa-bars");
+
+function openMenu() {
+    sidemenu.style.right = "0"
+}
+function closeMenu() {
+    sidemenu.style.right = "-200px"
+} 
+
+addMenu.addEventListener('click', ()=>{
+    openMenu();
+})
+removeMenu.addEventListener('click', ()=>{
+    closeMenu();
+})
+
+// sideMenu.addEventListener('click', ()=>{
+
+// })
+

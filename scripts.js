@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function startAnimation() {
         if (wavingIcon) {
-            wavingIcon.style.animation = 'wave 1s 4'; // Start the animation
+            wavingIcon.style.animation = 'wave 0.3s 4'; // Start the animation
             setTimeout(function () {
                 wavingIcon.style.animation = 'none'; // Remove the animation after 4 seconds
             }, 4000);
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Start animation, then repeat every 7 seconds (4 seconds waving + 3 seconds pause)
     startAnimation();
-    setInterval(startAnimation, 7000);
+    setInterval(startAnimation, 5000);
 });
 document.addEventListener('DOMContentLoaded', function () {
     let tabTitles = document.querySelectorAll('.tab-links');
